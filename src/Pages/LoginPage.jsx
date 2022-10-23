@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import {AuthContext} from '../Context/AuthContext';
 import {useContext} from 'react';
 import Login from '../Component/Login';
@@ -18,6 +18,10 @@ function LoginPage(){
         name:'',
         password:'',
     })
+    
+  useEffect(()=>{
+    document.title = 'Shopify - Login'
+ })
 
     const handleChange = (e)=>{
        let value =e.target.value;
@@ -53,6 +57,7 @@ function LoginPage(){
     return <Navigate to='/product'></Navigate>
   }
 
+
     return(<>
 
 
@@ -60,7 +65,7 @@ function LoginPage(){
           {
           login? <div>
           <Login username={info.Loginname} userpass={info.Loginpassword} handleChange={handleChange}/>
-          <button className='logbtn' onClick={handleClick}>Login</button>
+           <button className='logbtn' onClick={handleClick}>Login</button>
            </div>: <div>
             <Signup username={data.name} userpass={data.password} handleChange2={handleChange2}/>
              <button className='logbtn' onClick={handleClick2}>SignUp</button>

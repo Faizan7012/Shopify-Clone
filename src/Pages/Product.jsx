@@ -40,6 +40,7 @@ function Product(){
     const sort = 'price';
 
     useEffect(()=>{
+        document.title = 'Shopify - Product'
    let apiUrl = getUrl(`https://mock-server-yf9f.onrender.com/products?_page=${page}&_limit=${limit}`,sort,orderBy,filterBy);
    fetch(apiUrl).then((res)=>{
     setCount(Number(res.headers.get('X-Total-Count')));

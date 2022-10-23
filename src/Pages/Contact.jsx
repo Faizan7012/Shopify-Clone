@@ -1,7 +1,9 @@
 import {Link} from 'react-router-dom'
-
+import {useEffect} from 'react';
 function Contact(){
-
+    useEffect(()=>{
+        document.title = 'Shopify - Contact'
+     })
 
 return <>
  <div className='cont-div-top'>

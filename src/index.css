@@ -53,30 +53,37 @@ nav *{
   cursor: pointer;
 }
 
-nav *:hover{
-  color:red
-}
 .auth{
+  width: 60%;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
-  padding: 0px 300px;
+  justify-content:center;
   margin-top: 100px;
 }
 .auth div{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap:20px;
+}
+.login-div-1 input{
+  width: 100%;
+  margin: auto;
 }
 input{
   padding: 10px;
-  width: 300px;
+  width: 50%;
+  margin: auto;
   border-radius: 10px;
   border:2px solid gray
 
 }
 .logbtn{
-  padding: 15px;
   border-radius: 10px;
+  text-align: center;
+  padding:10px;
+  margin-left: 20px;
+
 }
 
 .faq_img{
@@ -95,7 +102,7 @@ ul{
 .about{
    display: grid;
    grid-template-columns: repeat(2,1fr);
-    margin-top: 100px;
+  margin-top: 200px;
 
 
 }
@@ -407,11 +414,6 @@ transition: all .5s;
   margin: 5px;
   color: #ffffff;
  }
- .del:hover{
-  background-color: rgb(153, 16, 16);
- }
-
-
 
 .nav2{
   display:flex;
@@ -540,6 +542,7 @@ transition: all .5s;
    .icon{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
    }
     label i{
@@ -556,13 +559,20 @@ transition: all .5s;
   }
  /* ----------------------Login ------------------- */
 
- .auth{
-  display: flex;
-  flex-direction: column;
-  padding: 10px 10px;
-  justify-content: center;
-  align-items: center;
-  margin-top: -50px;
+
+.login-div-1 input{
+  width: 100%;
+  margin: auto;
+ }
+ 
+ .logbtn{
+     width: 50%;
+     margin: auto;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
  }
 
 

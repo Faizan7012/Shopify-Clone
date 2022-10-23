@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 let arr = [
 
@@ -26,9 +26,12 @@ const [count,setCount] = useState(0)
      }
 
      setInterval(get,3000)
+     useEffect(()=>{
+        document.title = 'Shopify - Home'
+     })
 
     return <>
-     <div className="home1">
+     <div style={{marginTop:'70px'}} className="home1">
         <div>
             <h1>If you can dream it, you</h1>
             <h1>can sell it with Shopify</h1>

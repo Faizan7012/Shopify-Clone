@@ -6,6 +6,8 @@ function SingleProd(){
   const [obj,setObj] = useState({})
 
   useEffect(()=>{
+    document.title = 'Shopify - Product Detail'
+
     fetch(`https://mock-server-yf9f.onrender.com/products/${id}`).then((res)=>{
         return res.json();
     })

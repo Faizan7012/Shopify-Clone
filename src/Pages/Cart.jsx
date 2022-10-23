@@ -7,6 +7,7 @@ const [total,setTotal] = useState(0);
 const [count,setCount] = useState(0)
 
 useEffect(()=>{
+    document.title = 'Shopify - Cart'
     fetch('https://mock-server-yf9f.onrender.com/cart').then((res)=>{
         return res.json();
     })

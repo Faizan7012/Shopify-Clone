@@ -1,5 +1,8 @@
+import { useEffect } from "react";
 function Faq(){
-
+       useEffect(()=>{
+              document.title = 'Shopify - Faq'
+           })
 
 return <div className="faq-div-1">
        <h1>Shopify Store FAQ</h1>

@@ -2,7 +2,7 @@ function Signup({username,userpass,handleChange2}){
 
 
     return (
-           <div>
+           <div className="login-div-1">
             <h1>Sign Up</h1>
            <input name="name" type="text" onChange={handleChange2} value={username}  placeholder="Name"/>
            <input name='password' type="password" onChange={handleChange2} value={userpass}  placeholder="Password"/>

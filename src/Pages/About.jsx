@@ -1,5 +1,9 @@
+import {useEffect} from 'react'
 function About(){
-    return <div className="about">
+   useEffect(()=>{
+      document.title = 'Shopify - About'
+   })
+    return <div style={{marginTop:'100px'}} className="about">
       <div>
      <h1>Build anything.Reimagine commerce.</h1>
      <p>Millions of merchants trust Shopify to run their business—but they need developers to build the tools that help them achieve independence. Access powerful APIs to bring your ideas to life on the platform that makes commerce better for everyone.</p>
