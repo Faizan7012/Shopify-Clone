@@ -1,7 +1,7 @@
 function Faq(){
 
 
-return <div>
+return <div className="faq-div-1">
        <h1>Shopify Store FAQ</h1>
        <h3>What should I sell on Shopify?</h3>
        <p>Here some ideas on how to find a product to sell on shopify:</p>

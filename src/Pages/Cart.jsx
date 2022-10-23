@@ -37,7 +37,7 @@ const handleOrder = ()=>{
 
    
 }
-return <div>
+return <div className='cart-div-1'>
     <h1>Your Cart</h1>
       <div className="cart">
       {arr.map((prod)=>{

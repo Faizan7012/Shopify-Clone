@@ -53,8 +53,10 @@ function LoginPage(){
     return <Navigate to='/product'></Navigate>
   }
 
-    return(
-        <div className='auth'>
+    return(<>
+
+
+<div className='auth'>
           {
           login? <div>
           <Login username={info.Loginname} userpass={info.Loginpassword} handleChange={handleChange}/>
@@ -67,18 +69,21 @@ function LoginPage(){
 
           }
 
-         <center>
-         <h6 style={{color:'#f06'}} onClick={()=>setLogin(!login)}>
-           
-           For {login?'Signup':'Login'} Click here
-
-         </h6>
-         </center>
-        
        
 
        
         </div>
+
+
+    
+<h6 style={{color:'#f06'}} onClick={()=>setLogin(!login)}>
+           
+           For {login?'Signup':'Login'} Click here
+
+         </h6>
+        
+    </>
+      
      
     )
 

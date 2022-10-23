@@ -1,13 +1,15 @@
+import {Link} from 'react-router-dom'
+
 function Contact(){
 
 
 return <>
- <div>
+ <div className='cont-div-top'>
       <div>
         <h3 className="red_para">SHOPIFY INBOX</h3>
       <h1>Turn browsers into buyers using the power of chat</h1>
       <h4>Manage customer conversations, create automated messages, and get insights to focus on chats that convert, all from Shopify Inbox.</h4>
-       <button className="cont_btn">Login To get start</button>
+       <button className="cont_btn"><Link to='/login'>Login To get start</Link></button>
       </div>
       <div>
       <video muted="muted" playsinline="playsinline" data-autoplay="true" type="video/webm" src="https://cdn.shopify.com/shopifycloud/brochure/assets/inbox/hero-animation-7a13d48e08c8cc789a8b779aa89516bac0fb14a1c37d2c09465d0fbfa5b20112.webm"></video>

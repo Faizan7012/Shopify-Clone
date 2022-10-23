@@ -24,7 +24,6 @@ import Notfound from './Notfound'
     <Route path='/login' element={<LoginPage />}></Route>
     <Route path='/product/:id' element={<SingleProd />}></Route>
     <Route path='/*' element={<Notfound />}></Route>
-
    </Routes>
 
 

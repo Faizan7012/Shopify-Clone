@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { Link } from 'react-router-dom';
 let arr = [
 
 'https://cdn.shopify.com/shopifycloud/brochure/assets/home/desktop-refresh/store-builder-desktop-small-a514a51da7a2a9e645ccceb479538f326c490bc8d36b0555b3248d7e4c579c8f.png',
@@ -33,7 +34,11 @@ const [count,setCount] = useState(0)
             <h1>can sell it with Shopify</h1>
             <h3>Build your business here. Take it anywhere.</h3>
             <input type="text" placeholder="Enter your email address"/><br></br>
-            <button className="cont_btn">Start free trial</button>
+            <button className="cont_btn">
+                <Link to='/login'>
+                Start free trial
+                </Link>
+              </button>
             <p>Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
         </div>
         <img className='slideImg' src='https://cdn.shopify.com/shopifycloud/brochure/assets/home/desktop-refresh/hero-small-fb5c6e3ede460f1cc7c19b5066f086cf59a5f68ea42ac778602a8486bf66be3f.png' alt='img'/>
