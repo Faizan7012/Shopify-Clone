@@ -643,7 +643,7 @@ transition: all .5s;
     display: flex;
     flex-direction: column;
     gap:20px;
-    width: 80%;
+    width: 90%;
     margin: auto;
 
    }

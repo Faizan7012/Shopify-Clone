@@ -17,7 +17,7 @@ function SingleProd(){
   })
 
 
-  return <div className='single'>
+  return <div style={{marginTop:'100px'}} className='single'>
            <img src={obj.image} alt="img-prod" />
            <h3>{obj.title}</h3>
            <h5>Price : {obj.price}</h5>
