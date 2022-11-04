@@ -7,6 +7,11 @@
    
  <h4 align='center'>Fully responsive website with HTML, CSS, JavaScript and React. Main functionalities were : Register, Login , Sorting and Filtering in the Products page, Cart and many more.</p>
  
+ ### Live Link
+ 
+  [![Live badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)]( https://shopify-clone-24si9ctg5-faizan7012.vercel.app/)
+
+ 
  
  ### Duration
  
